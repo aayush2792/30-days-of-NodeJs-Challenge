@@ -1,0 +1,1 @@
+This Node.js code creates a simple Express application that listens on port 3000 and responds to GET requests on the root path with the message "Hello, I am aayush this is my 7th day on NodeJs". It also logs information about incoming requests.
