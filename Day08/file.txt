@@ -1,0 +1,1 @@
+This Node.js Express application creates an API endpoint (/positive) that verifies whether a provided number is a positive integer. It offers error handling and clear logging for robustness.
