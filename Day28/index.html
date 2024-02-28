@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collaborative Editing Tool</title>
+</head>
+<body>
+  <h1>Day 28 th solved </h1>
+  <div id="editor-content"></div>
+  <script>
+    const socket = new WebSocket('ws://localhost:3000'); // Connect to WebSocket server
+
+    socket.onopen = () => {
+      console.log('Connected to WebSocket server');
+    };
+
+    socket.onmessage = (event) => {
+      const data = JSON.parse(event.data);
+      // Update the editor content based on received data (implement your logic here)
+      document.getElementById('editor-content').textContent = data.sessionData.content; // Example: update content
+    };
+
+    // You can add functionality to handle user input and send messages to the server
+    // Implement your logic here, potentially using event listeners or input elements
+  </script>
+</body>
+</html>
