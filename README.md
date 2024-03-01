@@ -1,2 +1,3 @@
 # 30-days-of-NodeJs-Challenge
-Hii, i am going to challenge myself with the 30 days of Node.Js Challenge
+Challenge completed 
+01/02/2024 to 29/02/2024
